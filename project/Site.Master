@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="project.Site" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Leave Management System</title>
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page">
+            <header>
+                <div class="title">
+                    <h1>Leave Management System</h1>
+                </div>
+            </header>
+
+            <section id="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </section>
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Leave Management System</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
